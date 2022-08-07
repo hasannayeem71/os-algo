@@ -56,7 +56,7 @@ int main ()
         total+=tat[i];
     }
     avgtat=total/n;
-    
+
     printf("\nProcess\tBurst Time\tPriority\tW.T.\tTAT\t\n");
     for(i=0; i<n; i++)
     {
@@ -69,3 +69,6 @@ int main ()
 
     return 0;
 }
+
+
+// input : 5 10 3 1 1 2 4 1 5 5 2
