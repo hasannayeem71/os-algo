@@ -14,6 +14,7 @@ int main ()
         printf("Enter Burst Time of process %d:",i+1);
         scanf("%d",&bt[i]);
     }
+    // beacuse who came first doesn't have waiting time
     wt[0]=0;
     tat[0]=bt[0];
     for(i=1; i<n; i++)
@@ -37,3 +38,11 @@ int main ()
     return 0;
 }
 
+
+
+// input should be like this:
+
+// Enter Number of processes:3
+// Enter Burst Time of process 1: 24  
+// Enter Burst Time of process 2: 3
+// Enter Burst Time of process 3: 3
