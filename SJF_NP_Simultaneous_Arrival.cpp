@@ -63,3 +63,17 @@ int main ()
 
     return 0;
 }
+
+
+
+
+// output should be like this:
+
+/* 
+Enter the No. of processes : 4
+Enter the burst time of 1 process : 6
+Enter the burst time of 2 process : 4
+Enter the burst time of 3 process : 1
+Enter the burst time of 4 process : 5
+
+ */
