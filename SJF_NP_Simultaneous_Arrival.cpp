@@ -67,7 +67,7 @@ int main ()
 
 
 
-// output should be like this:
+// input should be like this:
 
 /* 
 Enter the No. of processes : 4
