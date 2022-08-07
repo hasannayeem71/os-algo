@@ -1,15 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 struct Process
 {
 int art;
 int bt;
 };
+
+// calculating turn around time function
 void findTurnAroundTime(Process proc[], int n, int wt[], int tat[])
 {
 for (int i = 0; i < n; i++)
 tat[i] = proc[i].bt + wt[i];
 }
+
+// calculating waiting time function
 void findWaitingTime(Process proc[], int n, int wt[])
 {
 int rt[n];
@@ -44,6 +49,10 @@ wt[shortest] = 0;
 t++;
 } }
 
+
+
+// find average waiting time function
+
 void findavgTime(Process proc[], int n)
 {
 int wt[n], tat[n], total_wt = 0,total_tat = 0;
@@ -61,6 +70,8 @@ cout << "P[" << i+1 <<"]"<< "\t\t" <<proc[i].art<< "\t\t "<< proc[i].bt << "\t\t
 cout << "\nAverage waiting time = " << (float)total_wt / (float)n;
 cout << "\nAverage turn around time = " << (float)total_tat / (float)n;
 }
+
+
 int main()
 {
 int n,i;
@@ -78,3 +89,5 @@ scanf("%d",&proc[i].bt);
 findavgTime(proc, n);
 return 0;
 }
+
+// input : 4 0 7 2 4 4 1 5 4

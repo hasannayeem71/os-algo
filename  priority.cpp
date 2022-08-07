@@ -17,6 +17,8 @@ int main ()
         p[i]=i+1;
     }
 
+
+// sorting the processes according to their priority
     for(i=0; i<n; i++)
     {
         for(j=i+1; j<n; j++)
@@ -37,7 +39,7 @@ int main ()
             }
         }
     }
-
+// calculating waiting time
     wt[0]=0;
     for(i=1; i<n; i++)
     {
@@ -45,6 +47,8 @@ int main ()
         total+=wt[i];
     }
     avgwt=total/n;
+
+    // calculating turn around time
     total=0;
     for(i=0; i<n; i++)
     {
@@ -52,6 +56,7 @@ int main ()
         total+=tat[i];
     }
     avgtat=total/n;
+    
     printf("\nProcess\tBurst Time\tPriority\tW.T.\tTAT\t\n");
     for(i=0; i<n; i++)
     {
