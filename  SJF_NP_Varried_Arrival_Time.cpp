@@ -32,9 +32,11 @@ int main ()
                 temp=p[k];
                 p[k]=p[i];
                 p[i]=temp;
+
                 temp=at[k];
                 at[k]=at[i];
                 at[i]=temp;
+                
                 temp=bt[k];
                 bt[k]=bt[i];
                 bt[i]=temp;
@@ -73,3 +75,7 @@ int main ()
     return 0;
 }
 
+
+
+
+// input : 4 0 7 2 4 4 1 5 4

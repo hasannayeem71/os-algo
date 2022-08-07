@@ -8,6 +8,7 @@ int main()
     double total=0, avgwt=0;
     printf("Input process number.\n");
     cin>>n;
+
     for(i=0; i<n; i++)
     {
         printf("Input burst time for process P[%d].\n",i+1);
@@ -17,6 +18,7 @@ int main()
     }
     printf("Take Input time quantum.\n");
     cin>>tq;
+
     for(i=0; i<n; i++)
     {
         rembt[i]=bt[i];
@@ -61,3 +63,4 @@ int main()
 }
 
 
+// input : 4 53 17 68 24 20 
